@@ -16,6 +16,8 @@ var createNewTaskElement = function (taskString) {
   label.className = "task__text";
 
   checkBox.type = "checkbox";
+  checkBox.class = "task__checkbox";
+
   editInput.type = "text";
   editInput.className = "task__text";
 
@@ -33,9 +35,9 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
+
   return listItem;
 }
-
 
 var addTask = function () {
   console.log("Add Task...");
@@ -109,7 +111,7 @@ addButton.addEventListener("click", ajaxRequest);
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
 
-  var checkBox = taskListItem.querySelector("input[type=checkbox]");
+  var checkBox = taskListItem.querySelector(".task__check");
   var editButton = taskListItem.querySelector(".task__edit");
   var deleteButton = taskListItem.querySelector(".task__delete");
 

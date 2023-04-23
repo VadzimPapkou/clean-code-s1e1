@@ -125,7 +125,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+li > .task__check {
   margin: 0 10px;
 }
 
