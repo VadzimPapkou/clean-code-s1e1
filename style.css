@@ -32,13 +32,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.task__text {
   display: inline-block;
   width: 56%;
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.d-flex {
   display: flex;
 }
 
