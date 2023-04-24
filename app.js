@@ -12,11 +12,13 @@ var createNewTaskElement = function (taskString) {
   var deleteButton = document.createElement("button");
   var deleteButtonImg = document.createElement("img");
 
+  listItem.className = "task";
+
   label.innerText = taskString;
   label.className = "task__text";
 
   checkBox.type = "checkbox";
-  checkBox.class = "task__checkbox";
+  checkBox.className = "task__check";
 
   editInput.type = "text";
   editInput.className = "task__text";
@@ -104,7 +106,6 @@ var ajaxRequest = function () {
   console.log("AJAX Request");
 }
 
-addButton.onclick = addTask;
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
